@@ -36,8 +36,5 @@ class SplashContent extends StatelessWidget {
           )
         ],
       );
-
   }
-
-
 }
