@@ -77,7 +77,7 @@ class _BodyState extends State<Body> {
                               'Continue',
                             )
                         ),
-                        Spacer(),
+                        const Spacer(),
                       ],
                     ),
                   )
@@ -91,13 +91,13 @@ class _BodyState extends State<Body> {
 AnimatedContainer buildDot({required int index}) {
     return AnimatedContainer(
         duration: kThemeAnimationDuration,
-      margin: EdgeInsets.only(right: 5),
+      margin: const EdgeInsets.only(right: 5),
       height: 6,
       width: currentPage == index ? 20 : 6,
       decoration: BoxDecoration(
-        color: currentPage == index ? kPrimaryColor : Color(0xffd8d8),
+        color: currentPage == index ? kPrimaryColor : const Color(0x00ffd8d8),
         borderRadius: BorderRadius.circular(3)
       ),
-    )
+    );
 }
 }
