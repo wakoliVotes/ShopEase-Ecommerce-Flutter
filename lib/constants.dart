@@ -1,6 +1,6 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:shopease_ecommerce/size_config.dart';
 
 const kPrimaryColor = Color(0x0fff7643);
 const kPrimaryLightColor = Color(0xfffecdf);
