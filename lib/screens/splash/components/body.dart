@@ -1,6 +1,5 @@
 
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/screens/splash/components/splash_content.dart';
@@ -26,7 +25,7 @@ class _BodyState extends State<Body> {
       'image': 'asser/images/splash_2.png'
     },
     {
-      "text": "We show the easy way to shop. \nJust stay at home wity us",
+      "text": "We show the easy way to shop. \nJust stay at home with us",
       'image': 'asser/images/splash_3.png'
     }
   ];
