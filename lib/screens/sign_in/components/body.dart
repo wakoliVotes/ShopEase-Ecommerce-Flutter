@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/screens/sign_in/components/sign_form.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
-class Body extends StatefulWidget {
+class Body extends StatelessWidget {
+  const Body({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
