@@ -1,6 +1,4 @@
 
-
-
 import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/screens/sign_in/components/sign_form.dart';
 import 'package:shopease_ecommerce/size_config.dart';

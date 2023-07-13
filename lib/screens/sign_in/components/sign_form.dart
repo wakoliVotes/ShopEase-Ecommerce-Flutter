@@ -1,10 +1,4 @@
-
-
-
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
@@ -22,17 +16,19 @@ class _SignFormState extends State<SignForm> {
   final List<String> errors = [];
 
   void addError({String? error}) {
-    if(!errors.contains(error))
+    if(!errors.contains(error)) {
       setState(() {
         errors.add(error);
       });
+    }
   }
 
   void removeError({String? error}) {
-    if(errors.contains(error))
+    if(errors.contains(error)) {
       setState(() {
         errors.remove(error);
       });
+    }
   }
 
   @override
@@ -59,14 +55,14 @@ class _SignFormState extends State<SignForm> {
                       });
                     }
                     ),
-                Text("Remember me"),
-                Spacer(),
+                const Text("Remember me"),
+                const Spacer(),
                 GestureDetector(
                   onTap: () => Navigator.pushNamed(
                       context,
                       ForgotPasswordScreen.routName
                   ),
-                  child: Text(
+                  child: const Text(
                     'Forgot Password',
                     style: TextStyle(
                       decoration: TextDecoration.underline
@@ -86,14 +82,12 @@ class _SignFormState extends State<SignForm> {
                     Navigator.pushNamed(context, LoginSuccessScreen.routName);
                   }
                 },
-                child: Text('Continue')
+                child: const Text('Continue')
             )
           ],
         ),
     );
   }
-}
-
 
 TextFormField buildPasswordFormField() {
   return TextFormField(
@@ -104,11 +98,20 @@ TextFormField buildPasswordFormField() {
         removeError(error: kPassNullError);
       } else if (value.length >= 8) {
         removeError(error: kShortPassError);
-        return "";
       }
       return null;
     },
-    decoration: InputDecoration(
+      validator: (value) {
+      if(value!.isEmpty) {
+        addError(error: kPassNullError);
+        return "";
+      }  else if(value.length < 8) {
+        addError(error: kShortPassError);
+        return "";
+      }
+      return null;
+      },
+      decoration: const InputDecoration(
       labelText: 'Password',
       hintText: 'Enter your password',
       floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -143,7 +146,7 @@ TextFormField buildEmailFormField(){
       }
       return null;
     },
-    decoration: InputDecoration(
+    decoration: const InputDecoration(
       labelText: "Email",
       hintText: "Enter your email",
       floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -151,5 +154,6 @@ TextFormField buildEmailFormField(){
         Icons.mail
       )
     ),
-  )
+  );
+}
 }
