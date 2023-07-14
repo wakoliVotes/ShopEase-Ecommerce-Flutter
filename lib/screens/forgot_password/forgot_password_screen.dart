@@ -24,7 +24,7 @@ class Body extends StatelessWidget {
                   color: Colors.black
                 ),
               ),
-              Text(
+              const Text(
                 'Please ebter your email and we will send \nyou a link to return to your account',
                 textAlign: TextAlign.center,
               ),
@@ -78,12 +78,47 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
                 setState(() {
                   errors.add(kEmailNullError);
                 });
+              } else if (!emailValidatorRegExp.hasMatch(value) &&
+              !errors.contains(kInvalidEmailError)
+              ) {
+                setState(() {
+                  errors.add(kInvalidEmailError);
+                });
               }
+              return null;
             },
-          )
+            decoration: const InputDecoration(
+              labelText: 'Email',
+              hintText: 'Enter your email',
+              floatingLabelBehavior: FloatingLabelBehavior.always,
+              suffixIcon: Icon(
+                Icons.mail,
+              )
+            ),
+          ),
+          SizedBox(
+            height: getProportionateScreenHeight(30),
+          ),
+          FormError(errors: errors),
+          SizedBox(
+            height: SizeConfig.screenHeight * 0.1,
+          ),
+          OutlinedButton(
+              onPressed: () {
+                if (_formKey.currentState!.validate()) {
+                  // TODo what you want here
+                }
+              },
+              child: const Text(
+                'Continue'
+              )
+          ),
+          SizedBox(
+            height: SizeConfig.screenHeight * 0.1,
+          ),
+          NoAccountText(),
         ],
       ),
-
-    )
+    );
   }
 }
