@@ -1,3 +1,7 @@
+// Author: Votes Wakoli
+// Start Date: 4th July, 2023
+// Project: E-Commerce Store With Flutter
+
 import 'package:flutter/material.dart';
 
 void main() {
