@@ -24,20 +24,20 @@ class Body extends StatelessWidget {
             color: Colors.black,
           ),
         ),
-        Spacer(),
+        const Spacer(),
         SizedBox(
           width: SizeConfig.screenWidth * 0.6,
           child: OutlinedButton(
             onPressed: () {
-              Navigator.pushNamed(context, HomeScreen.routeName)
+              Navigator.pushNamed(context, HomeScreen.routeName);
             },
-            child: Text(
+            child: const Text(
               'Back to Home'
             ),
           ),
         ),
-        Spacer(),
+        const Spacer(),
       ],
-    )
+    );
   }
 }
