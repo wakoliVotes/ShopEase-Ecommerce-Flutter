@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:shopease_ecommerce/screens/login_success/components/body.dart';
+import 'components/body.dart';
 
 class LoginSuccess extends StatelessWidget {
+  static String routeName = '/login_success';
   const LoginSuccess({super.key});
 
   @override
