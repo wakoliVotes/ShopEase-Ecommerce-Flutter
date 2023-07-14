@@ -42,6 +42,8 @@ class Body extends StatelessWidget {
 }
 
 class ForgotPassForm extends StatefulWidget {
+  const ForgotPassForm({super.key});
+
   @override
   _ForgotPassFormState createState() => _ForgotPassFormState();
 }
