@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
 class Body extends StatelessWidget {
@@ -52,6 +54,35 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
   Widget build(BuildContext context) {
     return Form(
       key: _formKey,
+      child: Column(
+        children: [
+          TextFormField(
+            keyboardType: TextInputType.emailAddress,
+            onSaved: (newValue) => email = newValue,
+            onChanged: (value) {
+              if (value.isNotEmpty && errors.contains(kEmailNullError)) {
+                setState(() {
+                  errors.remove(kEmailNullError);
+                });
+              } else if (emailValidatorRegExp.hasMatch(value) &&
+              errors.contains(kInvalidEmailError)
+              ) {
+                setState(() {
+                  errors.remove(kInvalidEmailError)
+                });
+              }
+              return null;
+            },
+            validator: (value) {
+              if (value!.isEmpty && !errors.contains(kEmailNullError) ) {
+                setState(() {
+                  errors.add(kEmailNullError);
+                });
+              }
+            },
+          )
+        ],
+      ),
 
     )
   }
