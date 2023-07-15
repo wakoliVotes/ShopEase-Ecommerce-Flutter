@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
@@ -21,12 +19,12 @@ class TopRoundedContainer extends StatelessWidget {
       width: double.infinity,
       decoration: BoxDecoration(
         color: color,
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(40),
-          topRight: Radius.circular(40)
-              
+          topRight: Radius.circular(40),
         )
       ),
-    )
+      child: child,
+    );
   }
 }
