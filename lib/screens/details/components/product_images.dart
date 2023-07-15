@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
 class ProductImages extends StatefulWidget {
@@ -60,8 +61,12 @@ class _ProductImagesState extends State<ProductImages> {
         width: getProportionateScreenWidth(48),
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(10)
+          borderRadius: BorderRadius.circular(10),
+          border: Border.all(
+            color: kPrimaryColor.withOpacity(selectedImage == index ? 1 : 0)
+          )
         ),
+        child: Image.asset(widget.product.images[index]),
       ),
     )
   }
