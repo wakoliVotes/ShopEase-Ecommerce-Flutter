@@ -48,6 +48,17 @@ class ColorDot extends StatelessWidget {
   final ool isSelected;
 
   @override
+  Widget build (BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(right: 2),
+      padding: EdgeInsets.all(getProportionateScreenWidth(8)),
+      height: getProportionateScreenHeight(40),
+      width: getProportionateScreenWidth(40),
+      decoration: BoxDecoration(
+
+      ),
+    )
+  }
 
 
 
