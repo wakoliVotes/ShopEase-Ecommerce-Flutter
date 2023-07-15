@@ -54,13 +54,12 @@ Size get prefferredSize => Size.fromHeight(AppBar().preferredSize.height);
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 5,
                     ),
-                    Icon(
+                    const Icon(
                       Icons.star
                     )
-
                   ],
                 ),
               )
