@@ -57,6 +57,9 @@ Size get prefferredSize => Size.fromHeight(AppBar().preferredSize.height);
                     SizedBox(
                       width: 5,
                     ),
+                    Icon(
+                      Icons.star
+                    )
 
                   ],
                 ),
