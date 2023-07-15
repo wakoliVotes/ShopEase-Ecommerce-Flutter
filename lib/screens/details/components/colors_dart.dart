@@ -1,7 +1,10 @@
 
 
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
+
+import '../../../models/Product.dart';
 
 class ColorDot extends StatelessWidget {
   const ColorDot({
@@ -29,7 +32,13 @@ class ColorDot extends StatelessWidget {
           RoundedIconBtn(
             icon: Icons.remove,
             PRESS: () {},
-
+          ),
+          SizedBox(
+            width: getProportionateScreenWidth(20),
+            RoundedIconBtn(
+              icon: Icons.add,
+              showShadow: true,
+              press: () {},
           )
         ],
       ),
@@ -45,7 +54,7 @@ class ColorDot extends StatelessWidget {
 }) : super (key: key);
 
   final Color color;
-  final ool isSelected;
+  final bool isSelected;
 
   @override
   Widget build (BuildContext context) {
@@ -55,11 +64,17 @@ class ColorDot extends StatelessWidget {
       height: getProportionateScreenHeight(40),
       width: getProportionateScreenWidth(40),
       decoration: BoxDecoration(
-
+        color: Colors.transparent,
+        border:
+          Border.all(color: isSelected ? kPrimaryColor : Colors.transparent),
+        shape: BoxShape.circle,
       ),
-    )
+      child: Decoration(
+        decoration: BoxDecoration(
+          color: color,
+          shape: BoxShape.circle,
+        )
+      ),
+    );
   }
-
-
-
 }
