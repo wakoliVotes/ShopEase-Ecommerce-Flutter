@@ -62,7 +62,7 @@ class ProductDescription extends StatelessWidget {
             ),
           child: GestureDetector(
             onTap: () {},
-            child: Row(
+            child: const Row(
               children: [
                 Text(
                   'See More Detail',
