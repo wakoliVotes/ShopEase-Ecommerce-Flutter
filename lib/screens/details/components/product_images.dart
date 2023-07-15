@@ -1,6 +1,8 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
+
+import '../../../models/Product.dart';
 
 class ProductImages extends StatefulWidget {
   const ProductImages({
@@ -68,6 +70,6 @@ class _ProductImagesState extends State<ProductImages> {
         ),
         child: Image.asset(widget.product.images[index]),
       ),
-    )
+    );
   }
 }
