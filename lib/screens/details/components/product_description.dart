@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
+import '../../../models/Product.dart';
+
 class ProductDescription extends StatelessWidget {
   const ProductDescription({
     Key? key,
@@ -41,7 +43,7 @@ class ProductDescription extends StatelessWidget {
             ),
             child: Icon(
               Icons.favorite,
-              color: product.isFavorite ? const Color(0xFFF4848) : const Color(0xFFDBDEE4),
+              color: product.isFavorite ? const Color(0x0fff4848) : const Color(0xFFDBDEE4),
             )
           ),
         ),
