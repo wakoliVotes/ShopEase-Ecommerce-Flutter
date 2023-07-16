@@ -39,8 +39,8 @@ ProductImages(product: product),
                           color: Colors.white,
                           child: Padding(
                             padding: EdgeInsets.only(
-                              left: SizeConfig.screenWidth * 0.15,
-                              right: SizeConfig.screenWidth * 0.15,
+                              left: SizeConfig.screenWidth! * 0.15,
+                              right: SizeConfig.screenWidth! * 0.15,
                               bottom: getProportionateScreenWidth(40),
                               top: getProportionateScreenWidth(15),
                             ),
@@ -59,6 +59,6 @@ ProductImages(product: product),
           ),
         )
       ],
-    )
+    );
   }
 }

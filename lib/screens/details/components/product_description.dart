@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
@@ -25,7 +24,7 @@ class ProductDescription extends StatelessWidget {
             EdgeInsets.all(getProportionateScreenWidth(20)),
           child: Text(
             product.title,
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
         ),
         Align(
@@ -35,7 +34,7 @@ class ProductDescription extends StatelessWidget {
             width: getProportionateScreenWidth(64),
             decoration: BoxDecoration(
               color:
-                product.isFavorite ? const Color(0xFFFFE6E6) : const Color(0xFFF5F6F9),
+                product.isFavourite ? const Color(0xFFFFE6E6) : const Color(0xFFF5F6F9),
               borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(20),
                 bottomLeft: Radius.circular(20),
@@ -43,7 +42,7 @@ class ProductDescription extends StatelessWidget {
             ),
             child: Icon(
               Icons.favorite,
-              color: product.isFavorite ? const Color(0x0fff4848) : const Color(0xFFDBDEE4),
+              color: product.isFavourite ? const Color(0x0fff4848) : const Color(0xFFDBDEE4),
             )
           ),
         ),
