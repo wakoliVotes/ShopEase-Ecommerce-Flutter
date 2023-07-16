@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'components/body.dart';
 
 class SignInScreen extends StatelessWidget {
-  static String routName = '/sign_in';
+  static String routeName = '/sign_in';
 
   const SignInScreen({super.key});
 

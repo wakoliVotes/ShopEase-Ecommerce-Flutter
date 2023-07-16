@@ -1,9 +1,10 @@
 
-
 import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/screens/splash/components/splash_content.dart';
 import 'package:shopease_ecommerce/size_config.dart';
+
+import '../../sign_in/sign_in_screen.dart';
 
 class Body extends StatefulWidget {
   const Body({super.key});
@@ -98,5 +99,5 @@ AnimatedContainer buildDot({required int index}) {
         borderRadius: BorderRadius.circular(3)
       ),
     );
-}
+  }
 }
