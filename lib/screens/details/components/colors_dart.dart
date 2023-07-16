@@ -6,8 +6,8 @@ import 'package:shopease_ecommerce/size_config.dart';
 
 import '../../../models/Product.dart';
 
-class ColorDot extends StatelessWidget {
-  const ColorDot({
+class ColorDots extends StatelessWidget {
+  const ColorDots({
     Key? key,
     required this.product,
 }) : super (key: key);
