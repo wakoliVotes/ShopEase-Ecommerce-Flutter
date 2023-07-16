@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
@@ -25,9 +24,9 @@ class RoundedIconBtn extends StatelessWidget {
         boxShadow: [
           if (showShadow)
             BoxShadow(
-              offset: Offset(0, 6),
+              offset: const Offset(0, 6),
               blurRadius: 10,
-              color: Color(0xFFB0BOB0).withOpacity(0.2),
+              color: const Color(0xFFB0B0B0).withOpacity(0.2),
             )
         ]
       ),
@@ -42,7 +41,6 @@ class RoundedIconBtn extends StatelessWidget {
         onPressed: press,
         child: Icon(icon),
       ),
-      
     );
   }
 }
