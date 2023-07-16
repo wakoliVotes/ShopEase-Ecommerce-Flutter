@@ -21,7 +21,7 @@ class SocalCard extends StatelessWidget {
         EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(10)),
         padding: EdgeInsets.all(getProportionateScreenWidth(12)),
         width: getProportionateScreenWidth(40),
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0xFFF5F6F9),
           shape: BoxShape.circle
         ),
