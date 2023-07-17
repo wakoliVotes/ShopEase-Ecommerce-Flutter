@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopease_ecommerce/components/custom_surffix_icon.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
@@ -97,9 +98,7 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
                 labelText: 'Email',
                 hintText: 'Enter your email',
                 floatingLabelBehavior: FloatingLabelBehavior.always,
-                suffixIcon: Icon(
-                  Icons.mail,
-                )
+                suffixIcon: CustomSurffixIcon(svgIcon: "assets/images/Mail.svg")
             ),
           ),
           SizedBox(

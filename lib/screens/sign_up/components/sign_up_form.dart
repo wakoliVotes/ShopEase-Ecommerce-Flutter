@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopease_ecommerce/components/custom_surffix_icon.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
@@ -97,9 +98,7 @@ TextFormField buildConfirmPasswordField(){
       labelText: "Confirm Password",
       hintText: "Re-enter ypur password",
       floatingLabelBehavior: FloatingLabelBehavior.always,
-      suffixIcon:   Icon(
-        Icons.lock
-      )
+      suffixIcon: CustomSurffixIcon(svgIcon: "assets/images/Lock.svg")
     ),
   );
 }

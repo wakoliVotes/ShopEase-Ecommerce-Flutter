@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopease_ecommerce/components/custom_surffix_icon.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
@@ -121,9 +122,7 @@ TextFormField buildPasswordFormField() {
       labelText: 'Password',
       hintText: 'Enter your password',
       floatingLabelBehavior: FloatingLabelBehavior.always,
-      suffixIcon: Icon(
-        Icons.lock
-      )
+      suffixIcon: CustomSurffixIcon(svgIcon: "assets/images/Mail.svg")
     ),
   );
 }
@@ -156,9 +155,7 @@ TextFormField buildEmailFormField(){
       labelText: "Email",
       hintText: "Enter your email",
       floatingLabelBehavior: FloatingLabelBehavior.always,
-      suffixIcon: Icon(
-        Icons.mail
-      )
+      suffixIcon: CustomSurffixIcon(svgIcon: "assets/images/Mail.svg")
     ),
   );
 }
