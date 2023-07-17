@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
 class SocalCard extends StatelessWidget {
@@ -25,9 +26,7 @@ class SocalCard extends StatelessWidget {
           color: Color(0xFFF5F6F9),
           shape: BoxShape.circle
         ),
-        child: Image.asset(
-          icon!
-        ),
+        child: SvgPicture.asset(icon!),
       ),
     );
   }

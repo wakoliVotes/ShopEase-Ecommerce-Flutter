@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:shopease_ecommerce/components/default_button.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/screens/splash/components/splash_content.dart';
 import 'package:shopease_ecommerce/size_config.dart';
@@ -69,13 +70,11 @@ class _BodyState extends State<Body> {
                           ),
                         ),
                         const Spacer(flex: 3),
-                        OutlinedButton(
-                            onPressed: () {
+                        DefaultButton(
+                          text: "Continue",
+                            press: () {
                               Navigator.pushNamed(context, SignInScreen.routeName);
                             },
-                            child: const Text(
-                              'Continue',
-                            )
                         ),
                         const Spacer(),
                       ],

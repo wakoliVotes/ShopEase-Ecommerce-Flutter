@@ -4,6 +4,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/routes.dart';
+import 'package:shopease_ecommerce/screens/splash/splash_screen.dart';
 import 'package:shopease_ecommerce/theme.dart';
 
 void main() {
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
       theme: theme(),
       // Home: splashScreen(),
       // Using routeName so that there is no need to remember the name
+      initialRoute: SplashScreen.routeName,
       routes: routes,
     );
   }
