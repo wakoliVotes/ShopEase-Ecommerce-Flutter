@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
+import '../../../components/form_error.dart';
+import '../../../components/no_account_text.dart';
+
 class Body extends StatelessWidget {
   const Body({super.key});
 
@@ -15,7 +18,7 @@ class Body extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: SizeConfig.screenHeight * 0.04,
+                height: SizeConfig.screenHeight! * 0.04,
               ),
               Text(
                 'Forgot Password',
@@ -26,13 +29,13 @@ class Body extends StatelessWidget {
                 ),
               ),
               const Text(
-                'Please ebter your email and we will send \nyou a link to return to your account',
+                'Please enter your email and we will send \nyou a link to return to your account',
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: SizeConfig.screenHeight * 0.1,
+                height: SizeConfig.screenHeight! * 0.1,
               ),
-              ForgotPassForm(),
+              const ForgotPassForm(),
             ],
           ),
         ),
@@ -71,7 +74,7 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
                   errors.contains(kInvalidEmailError)
               ) {
                 setState(() {
-                  errors.remove(kInvalidEmailError)
+                  errors.remove(kInvalidEmailError);
                 });
               }
               return null;
@@ -104,7 +107,7 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
           ),
           FormError(errors: errors),
           SizedBox(
-            height: SizeConfig.screenHeight * 0.1,
+            height: SizeConfig.screenHeight! * 0.1,
           ),
           OutlinedButton(
               onPressed: () {
@@ -117,9 +120,9 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
               )
           ),
           SizedBox(
-            height: SizeConfig.screenHeight * 0.1,
+            height: SizeConfig.screenHeight! * 0.1,
           ),
-          NoAccountText(),
+          const NoAccountText(),
         ],
       ),
     );

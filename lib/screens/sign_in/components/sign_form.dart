@@ -2,7 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
+import '../../../components/form_error.dart';
+import '../../forgot_password/forgot_password_screen.dart';
+import '../../login_success/login_success_screen.dart';
+
 class SignForm extends StatefulWidget {
+  const SignForm({super.key});
+
   @override
   _SignFormState createState() => _SignFormState();
 }
@@ -18,7 +24,7 @@ class _SignFormState extends State<SignForm> {
   void addError({String? error}) {
     if(!errors.contains(error)) {
       setState(() {
-        errors.add(error);
+        errors.add(error!);
       });
     }
   }
@@ -60,7 +66,7 @@ class _SignFormState extends State<SignForm> {
                 GestureDetector(
                   onTap: () => Navigator.pushNamed(
                       context,
-                      ForgotPasswordScreen.routName
+                      ForgotPasswordScreen.routeName
                   ),
                   child: const Text(
                     'Forgot Password',
@@ -79,7 +85,7 @@ class _SignFormState extends State<SignForm> {
                   if(_formKey.currentState!.validate()) {
                     _formKey.currentState!.save();
                   //   if all are valid then go to success screen
-                    Navigator.pushNamed(context, LoginSuccessScreen.routName);
+                    Navigator.pushNamed(context, LoginSuccessScreen.routeName);
                   }
                 },
                 child: const Text('Continue')

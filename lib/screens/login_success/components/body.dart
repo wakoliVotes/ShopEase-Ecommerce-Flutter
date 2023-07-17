@@ -1,20 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
+import '../../home/home_screen.dart';
+
 class Body extends StatelessWidget {
+  const Body({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         SizedBox(
-          height: SizeConfig.screenHeight * 0.04
+          height: SizeConfig.screenHeight! * 0.04
         ),
         Image.asset(
           'assets/images/success.png',
-          height: SizeConfig.screenHeight * 0.4, // 40%
+          height: SizeConfig.screenHeight! * 0.4, // 40%
         ),
         SizedBox(
-          height: SizeConfig.screenHeight * 0.08,
+          height: SizeConfig.screenHeight! * 0.08,
         ),
         Text(
           'Login Success',
@@ -26,7 +30,7 @@ class Body extends StatelessWidget {
         ),
         const Spacer(),
         SizedBox(
-          width: SizeConfig.screenWidth * 0.6,
+          width: SizeConfig.screenWidth! * 0.6,
           child: OutlinedButton(
             onPressed: () {
               Navigator.pushNamed(context, HomeScreen.routeName);

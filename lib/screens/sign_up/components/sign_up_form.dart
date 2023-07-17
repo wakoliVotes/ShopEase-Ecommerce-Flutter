@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
+import '../../../components/form_error.dart';
+import '../../complete_profile/complete_profile_screen.dart';
+
 class SignUpForm extends StatefulWidget {
   const SignUpForm({super.key});
   @override
@@ -59,7 +62,7 @@ class _SignUpFormState extends State<SignUpForm> {
                 if(_formKey.currentState!.validate()) {
                   _formKey.currentState!.save();
                   // If all are valid then go to the success screen
-                  Navigator.pushNamed(context, CompleteProfileScreen.routName);
+                  Navigator.pushNamed(context, CompleteProfileScreen.routeName);
                 }
               },
           )
@@ -123,7 +126,7 @@ TextFormField buildPasswordFormField() {
       }
       return null;
     },
-    decoration: InputDecoration(
+    decoration: const InputDecoration(
       labelText: "Password",
       hintText: "Enter your password",
       // If  you are using latest version of flutter then lable text and hint text shown like this
@@ -158,10 +161,10 @@ TextFormField buildEmailFormField() {
       }
       return null;
     },
-    decoration: InputDecoration(
+    decoration: const InputDecoration(
       labelText: "Email",
       hintText: "Enter your email",
-      // If  you are using latest version of flutter then lable text and hint text shown like this
+      // If  you are using latest version of flutter then label text and hint text shown like this
       // if you r using flutter less then 1.20.* then maybe this is not working properly
       floatingLabelBehavior: FloatingLabelBehavior.always,
       suffixIcon: Icon(

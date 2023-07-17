@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/screens/sign_in/components/sign_form.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
+import '../../../components/no_account_text.dart';
+import '../../../components/socal_card.dart';
+
 class Body extends StatelessWidget {
   const Body({super.key});
 
@@ -16,7 +19,7 @@ class Body extends StatelessWidget {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  SizedBox(height: SizeConfig.screenHeight * 0.04),
+                  SizedBox(height: SizeConfig.screenHeight! * 0.04),
                   Text(
                     'Welcome Back',
                     style: TextStyle(
@@ -25,13 +28,13 @@ class Body extends StatelessWidget {
                       fontWeight: FontWeight.bold
                     ),
                   ),
-                  Text(
+                  const Text(
                     'Sign in with your email and password \nor contnue with social media',
-                    textAlign: TextAlign.center,,
+                    textAlign: TextAlign.center,
                   ),
-                  SizedBox(height: SizeConfig.screenHeight * 0.08),
+                  SizedBox(height: SizeConfig.screenHeight! * 0.08),
                   SignForm(),
-                  SizedBox(height: SizeConfig.screenHeight * 0.08),
+                  SizedBox(height: SizeConfig.screenHeight! * 0.08),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -50,12 +53,12 @@ class Body extends StatelessWidget {
                     ],
                   ),
                   SizedBox(height: getProportionateScreenHeight(20)),
-                  NoAccountText();
+                  const NoAccountText(),
                 ],
               ),
             ),
           ),
         )
-    )
+    );
   }
 }

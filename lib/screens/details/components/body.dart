@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopease_ecommerce/screens/details/components/colors_dart.dart';
+import 'package:shopease_ecommerce/screens/details/components/colors_dots.dart';
 import 'package:shopease_ecommerce/screens/details/components/product_description.dart';
 import 'package:shopease_ecommerce/screens/details/components/product_images.dart';
 import 'package:shopease_ecommerce/screens/details/components/top_rounded_container.dart';

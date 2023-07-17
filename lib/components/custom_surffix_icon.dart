@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class CustomSurfixIcon extends StatelessWidget {
-  const CustomSurfixIcon({
+class CustomSurffixIcon extends StatelessWidget {
+  const CustomSurffixIcon({
     Key? key,
     required this.svgIcon,
 }) : super(key: key);

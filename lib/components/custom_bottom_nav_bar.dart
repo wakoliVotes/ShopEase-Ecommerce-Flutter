@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/constants.dart';
 
 import '../enums.dart';
+import '../screens/home/home_screen.dart';
 import '../screens/profile/profile_screen.dart';
 
 class CustomBottomNavBar extends StatelessWidget {

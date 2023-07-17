@@ -1,16 +1,15 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
+import '../../../components/rounded_icon_btn.dart';
 import '../../../models/Product.dart';
 
 class ColorDots extends StatelessWidget {
   const ColorDots({
     Key? key,
     required this.product,
-}) : super (key: key);
+  }) : super (key: key);
 
   final Product product;
 
@@ -18,27 +17,30 @@ class ColorDots extends StatelessWidget {
   Widget build(BuildContext context) {
     int selectedColor = 3;
     return Padding(
-        padding: EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
+      padding: EdgeInsets.symmetric(
+          horizontal: getProportionateScreenWidth(20)),
       child: Row(
         children: [
           ...List.generate(
             product.colors.length,
-              (index) => ColorDot(
-                color: product.colors[index],
-                isSelected: index == selectedColor
-              ),
+                (index) =>
+                ColorDot(
+                    color: product.colors[index],
+                    isSelected: index == selectedColor
+                ),
           ),
-          Spacer(),
+          const Spacer(),
           RoundedIconBtn(
             icon: Icons.remove,
-            PRESS: () {},
+            press: () {},
           ),
           SizedBox(
             width: getProportionateScreenWidth(20),
-            RoundedIconBtn(
-              icon: Icons.add,
-              showShadow: true,
-              press: () {},
+          ),
+          RoundedIconBtn(
+            icon: Icons.add,
+            showShadow: true,
+            press: () {},
           )
         ],
       ),
@@ -59,7 +61,7 @@ class ColorDot extends StatelessWidget {
   @override
   Widget build (BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(right: 2),
+      margin: const EdgeInsets.only(right: 2),
       padding: EdgeInsets.all(getProportionateScreenWidth(8)),
       height: getProportionateScreenHeight(40),
       width: getProportionateScreenWidth(40),
@@ -69,7 +71,7 @@ class ColorDot extends StatelessWidget {
           Border.all(color: isSelected ? kPrimaryColor : Colors.transparent),
         shape: BoxShape.circle,
       ),
-      child: Decoration(
+      child: DecoratedBox(
         decoration: BoxDecoration(
           color: color,
           shape: BoxShape.circle,
