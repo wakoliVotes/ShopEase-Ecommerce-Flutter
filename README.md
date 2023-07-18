@@ -1,7 +1,9 @@
 [//]: # (Votes Wakoli - Started on: 4th July, 2023)
 # ShopEase Ecommerce Store
-
 An Ecommerce Store UI Flutter project.
+<div align=center>
+<img src='screenshots/shopease_logo1.png' width=600 height="300" >
+</div>
 
 ## UI Screenshots
 **Onboarding Screens** 
