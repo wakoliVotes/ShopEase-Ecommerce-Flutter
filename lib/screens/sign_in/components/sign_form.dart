@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/components/custom_surffix_icon.dart';
+import 'package:shopease_ecommerce/components/default_button.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
@@ -90,6 +91,16 @@ class _SignFormState extends State<SignForm> {
                   }
                 },
                 child: const Text('Continue')
+            ),
+            DefaultButton(
+              text: 'Continye',
+              press: () {
+                if(_formKey.currentState!.validate()) {
+                  _formKey.currentState!.save();
+                  //   if all are valid then go to success screen
+                  Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+                }
+              },
             )
           ],
         ),
