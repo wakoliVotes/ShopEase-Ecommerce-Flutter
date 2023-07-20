@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/components/custom_surffix_icon.dart';
+import 'package:shopease_ecommerce/components/default_button.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
@@ -108,15 +109,13 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
           SizedBox(
             height: SizeConfig.screenHeight! * 0.1,
           ),
-          OutlinedButton(
-              onPressed: () {
-                if (_formKey.currentState!.validate()) {
-                  // TODo what you want here
-                }
-              },
-              child: const Text(
-                  'Continue'
-              )
+          DefaultButton(
+            press: () {
+              if (_formKey.currentState!.validate()) {
+                // TODo what you want here
+              }
+            },
+            text: 'Continue',
           ),
           SizedBox(
             height: SizeConfig.screenHeight! * 0.1,

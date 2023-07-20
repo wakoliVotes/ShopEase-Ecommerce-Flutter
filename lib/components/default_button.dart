@@ -26,9 +26,10 @@ class DefaultButton extends StatelessWidget {
         onPressed: press as void Function()?,
         child: Text(
           text!,
+          textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: getProportionateScreenWidth(18),
-            color: Colors.white
+            color: Colors.white,
           ),
         ),
       ),
