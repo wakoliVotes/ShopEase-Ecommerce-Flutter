@@ -141,13 +141,13 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
       onSaved: (newValue) => firstName = newValue,
       onChanged: (value) {
         if (value.isNotEmpty) {
-          removeError(error: kNamelNullError);
+          removeError(error: kNameNullError);
         }
         return null;
       },
       validator: (value) {
         if (value!.isEmpty) {
-          addError(error: kNamelNullError);
+          addError(error: kNameNullError);
           return "";
         }
         return null;

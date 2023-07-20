@@ -81,19 +81,8 @@ class _SignFormState extends State<SignForm> {
             ),
             FormError(errors: errors),
             SizedBox(height: getProportionateScreenHeight(20)),
-            OutlinedButton(
-
-                onPressed: () {
-                  if(_formKey.currentState!.validate()) {
-                    _formKey.currentState!.save();
-                  //   if all are valid then go to success screen
-                    Navigator.pushNamed(context, LoginSuccessScreen.routeName);
-                  }
-                },
-                child: const Text('Continue')
-            ),
             DefaultButton(
-              text: 'Continye',
+              text: 'Continue',
               press: () {
                 if(_formKey.currentState!.validate()) {
                   _formKey.currentState!.save();
@@ -133,7 +122,7 @@ TextFormField buildPasswordFormField() {
       labelText: 'Password',
       hintText: 'Enter your password',
       floatingLabelBehavior: FloatingLabelBehavior.always,
-      suffixIcon: CustomSurffixIcon(svgIcon: "assets/images/Mail.svg")
+      suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg")
     ),
   );
 }
@@ -166,7 +155,7 @@ TextFormField buildEmailFormField(){
       labelText: "Email",
       hintText: "Enter your email",
       floatingLabelBehavior: FloatingLabelBehavior.always,
-      suffixIcon: CustomSurffixIcon(svgIcon: "assets/images/Mail.svg")
+      suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg")
     ),
   );
 }

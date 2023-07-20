@@ -2,12 +2,12 @@
 import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
-const kPrimaryColor = Color(0x0fff7643);
-const kPrimaryLightColor = Color(0xfffecdf);
+const kPrimaryColor = Color(0xff57c415);
+const kPrimaryLightColor = Color(0xffffecdf);
 const kPrimaryGradientColor = LinearGradient(
   begin: Alignment.topLeft,
     end: Alignment.bottomLeft,
-    colors: [Color(0x0fffa53e), Color(0x0fff7643)]
+    colors: [Color(0x0fffa53e), Color(0xffff7643)]
 );
 
 const kSecondaryColor = Color(0xFF979797);
@@ -33,7 +33,7 @@ const String kInvalidEmailError = "Please Enter Valid Email";
 const String kPassNullError = "Please Enter your password";
 const String kShortPassError = "Password is too short";
 const String kMatchPassError = "Passwords don't match";
-const String kNamelNullError = "Please Enter your name";
+const String kNameNullError = "Please Enter your name";
 const String kPhoneNumberNullError = "Please Enter your phone number";
 const String kAddressNullError = "Please Enter your address";
 
@@ -48,6 +48,6 @@ final otpInputDecoration = InputDecoration(
 OutlineInputBorder outlineInputBorder() {
   return OutlineInputBorder(
     borderRadius: BorderRadius.circular(getProportionateScreenWidth(15)),
-    borderSide: BorderSide(color: kTextColor),
+    borderSide: const BorderSide(color: kTextColor),
   );
 }
