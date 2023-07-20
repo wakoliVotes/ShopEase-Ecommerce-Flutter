@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/screens/sign_up/components/body.dart';
 

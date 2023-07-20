@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopease_ecommerce/components/default_button.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
@@ -118,11 +119,9 @@ class _OtpFormState extends State<OtpForm> {
           SizedBox(
             height: SizeConfig.screenHeight! * 0.15,
           ),
-          OutlinedButton(
-              onPressed: () {},
-              child: const Text(
-                'Continue'
-              )
+          DefaultButton(
+            text: 'Continue',
+            press: () {},
           )
         ],
       ),

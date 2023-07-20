@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopease_ecommerce/components/default_button.dart';
 import 'package:shopease_ecommerce/screens/details/components/colors_dots.dart';
 import 'package:shopease_ecommerce/screens/details/components/product_description.dart';
 import 'package:shopease_ecommerce/screens/details/components/product_images.dart';
@@ -44,11 +45,9 @@ ProductImages(product: product),
                               bottom: getProportionateScreenWidth(40),
                               top: getProportionateScreenWidth(15),
                             ),
-                            child: OutlinedButton(
-                              child: const Text(
-                                'Add to Cart',
-                              ),
-                              onPressed: () {},
+                            child: DefaultButton(
+                              text: 'Add to Cart',
+                              press: () {},
                             ),
                           )
                       )

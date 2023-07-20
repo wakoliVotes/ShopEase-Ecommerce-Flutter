@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopease_ecommerce/components/custom_surffix_icon.dart';
+import 'package:shopease_ecommerce/components/default_button.dart';
 import 'package:shopease_ecommerce/constants.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
@@ -55,17 +56,15 @@ class _SignUpFormState extends State<SignUpForm> {
           SizedBox(
             height: getProportionateScreenHeight(40),
           ),
-          OutlinedButton(
-              child: const Text(
-                  'Continue'
-              ),
-            onPressed: () {
+          DefaultButton(
+            press: () {
                 if(_formKey.currentState!.validate()) {
                   _formKey.currentState!.save();
                   // If all are valid then go to the success screen
                   Navigator.pushNamed(context, CompleteProfileScreen.routeName);
                 }
               },
+            text: 'Continue',
           )
         ],
       ),

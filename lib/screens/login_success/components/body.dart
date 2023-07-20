@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopease_ecommerce/components/default_button.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
 import '../../home/home_screen.dart';
@@ -31,13 +32,11 @@ class Body extends StatelessWidget {
         const Spacer(),
         SizedBox(
           width: SizeConfig.screenWidth! * 0.6,
-          child: OutlinedButton(
-            onPressed: () {
+          child: DefaultButton(
+            text: 'Back to Home',
+            press: () {
               Navigator.pushNamed(context, HomeScreen.routeName);
             },
-            child: const Text(
-              'Back to Home'
-            ),
           ),
         ),
         const Spacer(),

@@ -14,7 +14,7 @@ class LoginSuccessScreen extends StatelessWidget {
           'Login Success'
         ),
       ),
-      body: Body(),
+      body: const Body(),
     );
   }
 }
