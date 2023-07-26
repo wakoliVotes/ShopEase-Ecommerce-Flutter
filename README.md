@@ -6,13 +6,21 @@
 </div>
 
 ## UI Screenshots
-**Onboarding Screens** 
-<!-- <img src='' height='520' width='200' > -->
+**Onboarding Screens**
+
+<img src='screenshots/welcome.jpeg' height=520 width=300 >
+
 **Sign Up**
+
+<img src='screenshots/sign_up.jpeg' height=520 width=300 >
 
 **Login**
 
+<img src='screenshots/sign_in.jpeg' height=520 width =300 >
+
 **Home Screen**
+
+<img src='screenshots/home.jpeg' height=520 width=300 >
 
 **Details**
 
