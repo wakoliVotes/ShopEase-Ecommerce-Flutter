@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shopease_ecommerce/size_config.dart';
 
 class FormError extends StatelessWidget {
@@ -22,7 +23,7 @@ class FormError extends StatelessWidget {
   Row formErrorText({required String error}) {
     return Row(
       children: [
-        Image.asset(
+        SvgPicture.asset(
           'assets/icons/Error.svg',
           height: getProportionateScreenWidth(14),
           width: getProportionateScreenWidth(14),
