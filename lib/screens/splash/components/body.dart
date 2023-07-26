@@ -24,11 +24,11 @@ class _BodyState extends State<Body> {
     },
     {
       "text": "We help people connect with store \naround the Globe",
-      'image': 'asser/images/splash_2.png'
+      'image': 'assets/images/splash_2.png'
     },
     {
       "text": "We show the easy way to shop. \nJust stay at home with us",
-      'image': 'asser/images/splash_3.png'
+      'image': 'assets/images/splash_3.png'
     }
   ];
   @override
