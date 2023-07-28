@@ -9,7 +9,7 @@
 ## UI Screenshots
 **Onboarding Screens**
 
-<img src='screenshots/welcome.jpeg' height=520 width=300 ><img src='screenshots/onboardone.jpeg' height=520 width=300 ><img src='screenshots/onboardtwo.jpeg' height=520 width=300 >
+<img src='screenshots/welcome.jpeg' height=520 width=300 ><img src='screenshots/onboardtwo.jpeg' height=520 width=300 ><img src='screenshots/onboardthree.jpeg' height=520 width=300 >
 
 **Sign Up**
 
