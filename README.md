@@ -1,26 +1,27 @@
 [//]: # (Votes Wakoli - Started on: 4th July, 2023)
 # ShopEase Ecommerce Store
 **An Ecommerce Store UI Flutter project.** - Still Under Development
+
 <div align=center>
-<img src='screenshots/shopease_logo1.png' width=600 height="300" >
+<img src='screenshots/shopease_logo1.png' width=500 height="300"  alt="">
 </div>
 
 ## UI Screenshots
 **Onboarding Screens**
 
-<img src='screenshots/welcome.jpeg' height=520 width=300 >
+<img src='screenshots/welcome.jpeg' height=520 width=300 ><img src='screenshots/onboardone.jpeg' height=520 width=300 ><img src='screenshots/onboardtwo.jpeg' height=520 width=300 >
 
 **Sign Up**
 
-<img src='screenshots/sign_up.jpeg' height=520 width=300 >
+<img src='screenshots/sign_up.jpeg' height=520 width=300 alt="" >
 
 **Login**
 
-<img src='screenshots/sign_in.jpeg' height=520 width =300 >
+<img src='screenshots/sign_in.jpeg' height=520 width =300 alt="">
 
 **Home Screen**
 
-<img src='screenshots/home.jpeg' height=520 width=300 >
+<img src='screenshots/home.jpeg' height=520 width=300  alt="">
 
 **Details**
 
